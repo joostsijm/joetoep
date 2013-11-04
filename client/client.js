@@ -147,7 +147,7 @@ function JoeToepRemote(joeToepInterface) {
 	});
 
 	$(document).keypress(function (e) {
-		if ( $("*:focus").is("textarea, input") ) return;
+		if ( $(e.target).is("input") ) return;
 
 		switch (e.which) {
 			case 112:
