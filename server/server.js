@@ -156,7 +156,8 @@ var search = function (query, callback) {
 }
 
 var searchRequest = function (query, callback) {
-	var url = 'https://www.googleapis.com/youtube/v3/search?key=' + config.youtubeKey + '&part=snippet&maxResults=25&type=video&q=';
+	// var url = 'https://www.googleapis.com/youtube/v3/search?key=' + config.youtubeKey + '&part=snippet&maxResults=25&type=video&q=';
+	var url = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyBdTSLt9gur6ZjcMdt_0Ch9C2tyopY1Eek&part=snippet&maxResults=25&type=video&q=';
 	https.get(url + encodeURIComponent(query), function (res) {
 		var body = '';
 
