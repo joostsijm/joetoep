@@ -44,8 +44,7 @@ var playlist = {};
 
 var io = socketio.listen(app);
 
-io.enable('browser client etag');
-io.set('log level', 1);
+io.use('browser client etag');
 io.set('transports', ['xhr-polling', 'jsonp-polling']);
 
 io.sockets.on('connection', function (socket) {
